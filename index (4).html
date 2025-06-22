@@ -1,0 +1,776 @@
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马来西亚留学服务 - 公立前五加马莫任意申请</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#165DFF',
+              secondary: '#FF7D00',
+              neutral: {
+                100: '#F5F7FA',
+                200: '#E4E7ED',
+                300: '#C0C4CC',
+                400: '#909399',
+                500: '#606266',
+                600: '#303133',
+              }
+            },
+            fontFamily: {
+              inter: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            boxShadow: {
+              'card': '0 10px 30px -5px rgba(0, 0, 0, 0.1)',
+              'hover': '0 20px 40px -5px rgba(22, 93, 255, 0.15)',
+            }
+          },
+        }
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+        .text-shadow {
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .text-gradient {
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          background-image: linear-gradient(135deg, #165DFF, #0A2463);
+        }
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+        .bg-pattern {
+          background-image: radial-gradient(#165DFF 0.5px, transparent 0.5px), radial-gradient(#165DFF 0.5px, transparent 0.5px);
+          background-size: 20px 20px;
+          background-position: 0 0, 10px 10px;
+          opacity: 0.05;
+        }
+      }
+
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+    </style>
+  </head>
+  <body class="font-inter bg-neutral-100 text-neutral-600 overflow-x-hidden">
+    <!-- 背景装饰 -->
+    <div class="fixed inset-0 -z-10 bg-pattern"></div>
+    
+    <!-- 导航栏 -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300" id="navbar">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <div class="text-primary font-bold text-xl sm:text-2xl flex items-center">
+              <i class="fa-solid fa-graduation-cap mr-2"></i>
+              <span>马来西亚留学服务</span>
+            </div>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#services" class="text-neutral-600 hover:text-primary transition-colors">服务内容</a>
+            <a href="#benefits" class="text-neutral-600 hover:text-primary transition-colors">服务优势</a>
+            <a href="#process" class="text-neutral-600 hover:text-primary transition-colors">申请流程</a>
+            <a href="#faq" class="text-neutral-600 hover:text-primary transition-colors">常见问题</a>
+            <a href="#contact" class="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full transition-all transform hover:scale-105">立即咨询</a>
+          </div>
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-neutral-600 focus:outline-none">
+              <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 移动端菜单 -->
+      <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+        <div class="container mx-auto px-4 py-3 space-y-3">
+          <a href="#services" class="block py-2 text-neutral-600 hover:text-primary">服务内容</a>
+          <a href="#benefits" class="block py-2 text-neutral-600 hover:text-primary">服务优势</a>
+          <a href="#process" class="block py-2 text-neutral-600 hover:text-primary">申请流程</a>
+          <a href="#faq" class="block py-2 text-neutral-600 hover:text-primary">常见问题</a>
+          <a href="#contact" class="block py-2 bg-primary text-white text-center rounded-lg">立即咨询</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 英雄区域 -->
+      <section class="pt-28 pb-20 md:pt-36 md:pb-28 bg-gradient-to-br from-white to-blue-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col lg:flex-row items-center">
+            <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
+              <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold leading-tight text-neutral-600 mb-4">
+                马来西亚公立前五<br>
+                <span class="text-gradient">加马莫任意申请</span>
+              </h1>
+              <p class="text-lg md:text-xl text-neutral-500 mb-8 max-w-xl">无需定金，下offer后再付尾款4500元！不限学校数量，不限专业数量，一站式留学服务助您成功申请心仪大学。</p>
+              <div class="flex flex-wrap gap-4">
+                <a href="#contact" class="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-full font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                  免费评估
+                  <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#services" class="bg-white hover:bg-neutral-50 text-primary border border-primary px-8 py-3 rounded-full font-medium transition-all transform hover:scale-105 shadow-md hover:shadow-lg">
+                  了解详情
+                </a>
+              </div>
+              <div class="mt-10 flex items-center space-x-6">
+                <div class="flex -space-x-2">
+                  <img src="https://picsum.photos/id/1001/100/100" alt="学生照片" class="w-10 h-10 rounded-full border-2 border-white">
+                  <img src="https://picsum.photos/id/1002/100/100" alt="学生照片" class="w-10 h-10 rounded-full border-2 border-white">
+                  <img src="https://picsum.photos/id/1003/100/100" alt="学生照片" class="w-10 h-10 rounded-full border-2 border-white">
+                  <div class="w-10 h-10 rounded-full border-2 border-white bg-primary text-white flex items-center justify-center text-xs font-medium">100+</div>
+                </div>
+                <div class="text-sm text-neutral-500">
+                  已经发出<span class="font-semibold text-primary">100+份offer</span>，成功帮助众多学生圆梦
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 relative">
+              <div class="relative z-10 animate-float">
+                <img src="https://p3-search.byteimg.com/obj/labis/79adafd3ad97229c39cdcf31aa54e50c" alt="马来西亚校园" class="rounded-2xl shadow-card">
+                <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg">
+                  <div class="flex items-center space-x-3">
+                    <div class="bg-primary/10 p-3 rounded-full">
+                      <i class="fa-solid fa-check text-primary"></i>
+                    </div>
+                    <div>
+                      <div class="font-bold text-neutral-600">0定金</div>
+                      <div class="text-xs text-neutral-500">下offer再付款</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/10 rounded-full blur-3xl -z-10"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 服务内容 -->
+      <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-neutral-600 mb-4">我们的服务内容</h2>
+            <p class="text-lg text-neutral-500 max-w-2xl mx-auto">从申请到入学，我们提供全方位的留学服务，让您的留学之路轻松无忧</p>
+          </div>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- 服务卡片1 -->
+            <div class="bg-white rounded-2xl p-6 shadow-card hover:shadow-hover transition-all duration-300 transform hover:-translate-y-1 border border-neutral-200">
+              <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                <i class="fa-solid fa-file-text text-2xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-bold text-neutral-600 mb-3">文书撰写与材料整理</h3>
+              <p class="text-neutral-500 mb-4">专业文书团队为您撰写高质量的个人陈述、推荐信等申请材料，针对研究型和混合型项目深度优化，确保材料完整规范。</p>
+              <ul class="space-y-2 text-neutral-500">
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>个人陈述撰写</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>推荐信指导与修改</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>材料翻译与公证</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- 服务卡片2 -->
+            <div class="bg-white rounded-2xl p-6 shadow-card hover:shadow-hover transition-all duration-300 transform hover:-translate-y-1 border border-neutral-200">
+              <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                <i class="fa-solid fa-university text-2xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-bold text-neutral-600 mb-3">学校申请与录取跟进</h3>
+              <p class="text-neutral-500 mb-4">根据您的背景和需求，申请马来西亚公立前五大学及马莫大学，不限学校和专业数量。</p>
+              <ul class="space-y-2 text-neutral-500">
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>公立前五+马莫大学申请</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>不限申请学校数量</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>录取结果跟进与分析</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- 服务卡片3 -->
+            <div class="bg-white rounded-2xl p-6 shadow-card hover:shadow-hover transition-all duration-300 transform hover:-translate-y-1 border border-neutral-200">
+              <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                <i class="fa-solid fa-passport text-2xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-bold text-neutral-600 mb-3">签证办理与入境准备</h3>
+              <p class="text-neutral-500 mb-4">协助办理各类签证，提供入境指导，确保顺利抵达马来西亚开始留学生活。</p>
+              <ul class="space-y-2 text-neutral-500">
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>学生签证申请</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>eVisa办理</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>入境指导与准备</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- 服务卡片4 -->
+            <div class="bg-white rounded-2xl p-6 shadow-card hover:shadow-hover transition-all duration-300 transform hover:-translate-y-1 border border-neutral-200">
+              <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                <i class="fa-solid fa-clipboard-check text-2xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-bold text-neutral-600 mb-3">入学注册与选课指导</h3>
+              <p class="text-neutral-500 mb-4">帮助完成入学注册手续，提供选课建议，让您快速适应马来西亚的学习环境。</p>
+              <ul class="space-y-2 text-neutral-500">
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>入学注册指导</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>课程选择建议</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>学术规划制定</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- 服务卡片5 -->
+            <div class="bg-white rounded-2xl p-6 shadow-card hover:shadow-hover transition-all duration-300 transform hover:-translate-y-1 border border-neutral-200">
+              <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                <i class="fa-solid fa-home text-2xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-bold text-neutral-600 mb-3">生活协助与租房推荐</h3>
+              <p class="text-neutral-500 mb-4">提供住宿建议和租房推荐，帮助解决生活问题，让您在马来西亚有一个舒适的生活环境。</p>
+              <ul class="space-y-2 text-neutral-500">
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>学生公寓申请</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>校外租房推荐</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>生活问题咨询</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- 服务卡片6 -->
+            <div class="bg-white rounded-2xl p-6 shadow-card hover:shadow-hover transition-all duration-300 transform hover:-translate-y-1 border border-neutral-200">
+              <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                <i class="fa-solid fa-shield-check text-2xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-bold text-neutral-600 mb-3">后续支持与认证协助</h3>
+              <p class="text-neutral-500 mb-4">提供签证续签指导，协助办理中留服认证，确保您的学历得到国内认可。</p>
+              <ul class="space-y-2 text-neutral-500">
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>学生签证换发引导</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>被拒后申诉服务</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fa-solid fa-check text-primary mt-1 mr-2"></i>
+                  <span>中留服认证协助</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 服务优势 -->
+      <section id="benefits" class="py-20 bg-neutral-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-neutral-600 mb-4">为什么选择我们</h2>
+            <p class="text-lg text-neutral-500 max-w-2xl mx-auto">我们的服务优势，让您的留学申请更加顺利</p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- 优势卡片1 -->
+            <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <i class="fa-solid fa-hand-holding-usd text-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-bold text-neutral-600 mb-3">0定金，下offer再付款</h3>
+              <p class="text-neutral-500">无需预先支付费用，成功获得录取通知书后再支付尾款4500元，降低您的申请风险。</p>
+            </div>
+            
+            <!-- 优势卡片2 -->
+            <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <i class="fa-solid fa-school text-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-bold text-neutral-600 mb-3">不限学校和专业</h3>
+              <p class="text-neutral-500">可同时申请马来西亚公立前五大学及马莫大学，且不限制申请专业数量，提高录取机会。</p>
+            </div>
+            
+            <!-- 优势卡片3 -->
+            <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <i class="fa-solid fa-users text-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-bold text-neutral-600 mb-3">专业顾问团队</h3>
+              <p class="text-neutral-500">团队成员均为马来亚大学硕博在读学生，熟悉各大学申请要求，提供专业指导。</p>
+            </div>
+            
+            <!-- 优势卡片4 -->
+            <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+              <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <i class="fa-solid fa-headphones text-xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-bold text-neutral-600 mb-3">全程一对一服务</h3>
+              <p class="text-neutral-500">从咨询到入学，提供全程一对一服务，随时解答您的疑问，让您的留学申请更加安心。</p>
+            </div>
+          </div>
+          
+          <div class="mt-16 bg-white rounded-2xl p-8 shadow-card">
+            <div class="flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                <h3 class="text-2xl font-bold text-neutral-600 mb-4">透明的服务流程，让您清楚每一步</h3>
+                <p class="text-neutral-500 mb-6">我们承诺所有服务内容和费用透明，不会有任何隐藏收费。您可以随时了解申请进度，掌握主动权。</p>
+                <div class="flex items-center space-x-4">
+                  <div class="bg-primary/10 p-3 rounded-full">
+                    <i class="fa-solid fa-check text-primary"></i>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-neutral-600">透明收费</div>
+                    <div class="text-sm text-neutral-500">0定金，下offer后支付4500元</div>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4 mt-4">
+                  <div class="bg-primary/10 p-3 rounded-full">
+                    <i class="fa-solid fa-check text-primary"></i>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-neutral-600">进度跟踪</div>
+                    <div class="text-sm text-neutral-500">定期更新申请状态，让您随时了解</div>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-1/2">
+                <img src="https://picsum.photos/id/1015/800/600" alt="服务流程" class="rounded-xl shadow-sm">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 申请流程 -->
+      <section id="process" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-neutral-600 mb-4">申请流程</h2>
+            <p class="text-lg text-neutral-500 max-w-2xl mx-auto">从咨询到入学，简单四步轻松开启您的马来西亚留学之旅</p>
+          </div>
+          
+          <div class="relative">
+            <!-- 流程线 -->
+            <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-primary/20 -translate-y-1/2 z-0"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+              <!-- 步骤1 -->
+              <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-neutral-200">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 mx-auto">
+                  1
+                </div>
+                <h3 class="text-xl font-bold text-neutral-600 mb-3 text-center">免费咨询评估</h3>
+                <p class="text-neutral-500 text-center">提交您的背景信息，我们的顾问将为您提供免费评估和留学方案规划。</p>
+              </div>
+              
+              <!-- 步骤2 -->
+              <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-neutral-200">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 mx-auto">
+                  2
+                </div>
+                <h3 class="text-xl font-bold text-neutral-600 mb-3 text-center">材料准备</h3>
+                <p class="text-neutral-500 text-center">我们的专业团队将协助您准备申请材料，包括文书撰写、材料翻译和公证等。</p>
+              </div>
+              
+              <!-- 步骤3 -->
+              <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-neutral-200">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 mx-auto">
+                  3
+                </div>
+                <h3 class="text-xl font-bold text-neutral-600 mb-3 text-center">学校申请</h3>
+                <p class="text-neutral-500 text-center">向马来西亚公立前五大学及马莫提交申请，跟踪申请进度，直至获得录取通知书。</p>
+              </div>
+              
+              <!-- 步骤4 -->
+              <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-neutral-200">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mb-6 mx-auto">
+                  4
+                </div>
+                <h3 class="text-xl font-bold text-neutral-600 mb-3 text-center">签证与入学</h3>
+                <p class="text-neutral-500 text-center">协助办理签证、安排住宿、提供行前指导，帮助您顺利入学并适应留学生活。</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-16 text-center">
+            <a href="#contact" class="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full font-medium transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+              立即开始您的留学申请
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 常见问题 -->
+      <section id="faq" class="py-20 bg-neutral-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-neutral-600 mb-4">常见问题</h2>
+            <p class="text-lg text-neutral-500 max-w-2xl mx-auto">解答您关于马来西亚留学的疑问</p>
+          </div>
+          
+          <div class="max-w-3xl mx-auto">
+            <div class="space-y-4">
+              <!-- FAQ 项目1 -->
+              <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <button class="faq-toggle w-full px-6 py-4 text-left font-semibold text-neutral-600 flex justify-between items-center focus:outline-none">
+                  <span>公立前五大学和马莫大学具体是哪些学校？</span>
+                  <i class="fa-solid fa-chevron-down text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content px-6 pb-4 hidden">
+                  <p class="text-neutral-500">
+                    公立前五大学指的是马来亚大学（UM）、马来西亚国民大学（UKM）、马来西亚博特拉大学（UPM）、马来西亚理科大学（USM）和马来西亚工艺大学（UTM）。马莫大学指的是马来西亚管理与科学大学（MSU）。
+                  </p>
+                </div>
+              </div>
+              
+              <!-- FAQ 项目2 -->
+              <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <button class="faq-toggle w-full px-6 py-4 text-left font-semibold text-neutral-600 flex justify-between items-center focus:outline-none">
+                  <span>申请需要满足什么条件？</span>
+                  <i class="fa-solid fa-chevron-down text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content px-6 pb-4 hidden">
+                  <p class="text-neutral-500">
+                    本科申请通常需要高中毕业或同等学历，成绩达到一定标准；硕士申请需要本科毕业并有学士学位，部分专业需要相关工作经验或GPA要求。具体条件因学校和专业而异，我们的顾问会根据您的情况为您提供详细评估。
+                  </p>
+                </div>
+              </div>
+              
+              <!-- FAQ 项目3 -->
+              <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <button class="faq-toggle w-full px-6 py-4 text-left font-semibold text-neutral-600 flex justify-between items-center focus:outline-none">
+                  <span>尾款4500元包含哪些服务？</span>
+                  <i class="fa-solid fa-chevron-down text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content px-6 pb-4 hidden">
+                  <p class="text-neutral-500">
+                    尾款4500元包含文书撰写、材料整理、不限数量的学校和专业申请、录取跟进、签证申请指导、入学注册指导、选课建议、生活协助等全套服务。不包含学校申请费、签证费、公证费等第三方费用。
+                  </p>
+                </div>
+              </div>
+              
+              <!-- FAQ 项目4 -->
+              <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <button class="faq-toggle w-full px-6 py-4 text-left font-semibold text-neutral-600 flex justify-between items-center focus:outline-none">
+                  <span>申请需要多长时间？</span>
+                  <i class="fa-solid fa-chevron-down text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content px-6 pb-4 hidden">
+                  <p class="text-neutral-500">
+                    本科申请通常需要3-6个月，硕士申请需要4-8个月，具体时间取决于学校和专业。我们会在申请过程中及时跟踪进度，并向您反馈最新情况。
+                  </p>
+                </div>
+              </div>
+              
+              <!-- FAQ 项目5 -->
+              <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <button class="faq-toggle w-full px-6 py-4 text-left font-semibold text-neutral-600 flex justify-between items-center focus:outline-none">
+                  <span>如果申请被拒，会退款吗？</span>
+                  <i class="fa-solid fa-chevron-down text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="faq-content px-6 pb-4 hidden">
+                  <p class="text-neutral-500">
+                    如果所有申请学校都被拒绝，我们将退还全部服务费用。此外，我们还提供被拒argue服务，帮助您争取录取机会。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 联系我们 -->
+      <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12">
+              <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-neutral-600 mb-4">立即咨询</h2>
+              <p class="text-lg text-neutral-500 mb-8">
+                填写下方表单，我们的专业顾问将在24小时内与您联系，为您提供免费的留学评估和规划。
+              </p>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mt-1 mr-4">
+                    <i class="fa-solid fa-phone text-primary"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-neutral-600">电话咨询</h3>
+                    <p class="text-neutral-500">+86 15176804025</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mt-1 mr-4">
+                    <i class="fa-solid fa-envelope text-primary"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-neutral-600">电子邮件</h3>
+                    <p class="text-neutral-500">mike1946295662@gmail.com</p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mt-1 mr-4">
+                    <i class="fa-brands fa-weixin text-primary text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-neutral-600">微信咨询</h3>
+                    <p class="text-neutral-500">mlymly6758</p>
+                    <div class="mt-3 bg-white p-2 inline-block rounded-lg shadow-md">
+                      <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/3f7a811f5f2d4061a54c752ecb07c424~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1751207487&amp;x-signature=kaokiWFtFZkIV8TcMrrSboCSCKU%3D" alt="微信二维码" class="w-40 h-40 object-cover rounded">
+                      <div class="text-xs text-center mt-1">扫码添加微信咨询</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mt-1 mr-4">
+                    <i class="fa-solid fa-clock text-primary"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-neutral-600">工作时间</h3>
+                    <p class="text-neutral-500">7*24小时全天候服务</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="lg:w-1/2 w-full">
+              <!-- 表单已被删除 -->
+              <div class="bg-white rounded-2xl p-8 shadow-card text-center">
+                <div class="mb-6">
+                  <div class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
+                    <i class="fa-solid fa-info-circle text-2xl text-primary"></i>
+                  </div>
+                  <h3 class="text-xl font-bold text-neutral-600 mb-2">联系方式</h3>
+                  <p class="text-neutral-500">如需咨询，请通过以下方式联系我们</p>
+                </div>
+                <div class="space-y-4 text-left">
+                  <div class="flex items-start">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mt-1 mr-3">
+                      <i class="fa-solid fa-phone text-primary"></i>
+                    </div>
+                    <div>
+                      <div class="font-medium text-neutral-600">电话</div>
+                      <div class="text-neutral-500">+86 15176804025</div>
+                    </div>
+                  </div>
+                  <div class="flex items-start">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mt-1 mr-3">
+                      <i class="fa-solid fa-envelope text-primary"></i>
+                    </div>
+                    <div>
+                      <div class="font-medium text-neutral-600">邮箱</div>
+                      <div class="text-neutral-500">mike1946295662@gmail.com</div>
+                    </div>
+                  </div>
+                  <div class="flex items-start">
+                    <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mt-1 mr-3">
+                      <i class="fa-brands fa-weixin text-primary"></i>
+                    </div>
+                    <div>
+                      <div class="font-medium text-neutral-600">微信</div>
+                      <div class="text-neutral-500">mlymly6758</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-neutral-600 text-white py-12">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div>
+            <div class="text-2xl font-bold mb-4 flex items-center">
+              <i class="fa-solid fa-graduation-cap mr-2"></i>
+              <span>马来西亚留学服务</span>
+            </div>
+            <p class="text-neutral-300 mb-6">
+              专业的马来西亚留学申请服务，助您成功申请公立前五大学及马莫大学，开启精彩留学之旅。
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-neutral-300 hover:text-white transition-colors">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" class="text-neutral-300 hover:text-white transition-colors">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="text-neutral-300 hover:text-white transition-colors">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="text-neutral-300 hover:text-white transition-colors">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="#" class="text-neutral-300 hover:text-white transition-colors">
+                <i class="fa-brands fa-weixin"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">快速链接</h3>
+            <ul class="space-y-2">
+              <li><a href="#services" class="text-neutral-300 hover:text-white transition-colors">服务内容</a></li>
+              <li><a href="#benefits" class="text-neutral-300 hover:text-white transition-colors">服务优势</a></li>
+              <li><a href="#process" class="text-neutral-300 hover:text-white transition-colors">申请流程</a></li>
+              <li><a href="#faq" class="text-neutral-300 hover:text-white transition-colors">常见问题</a></li>
+              <li><a href="#contact" class="text-neutral-300 hover:text-white transition-colors">联系我们</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">热门学校</h3>
+            <ul class="space-y-2">
+              <li><a href="https://www.um.edu.my/" target="_blank" class="text-neutral-300 hover:text-white transition-colors">马来亚大学 (UM)</a></li>
+              <li><a href="#" class="text-neutral-300 hover:text-white transition-colors">马来西亚国民大学 (UKM)</a></li>
+              <li><a href="#" class="text-neutral-300 hover:text-white transition-colors">马来西亚博特拉大学 (UPM)</a></li>
+              <li><a href="#" class="text-neutral-300 hover:text-white transition-colors">马来西亚理科大学 (USM)</a></li>
+              <li><a href="#" class="text-neutral-300 hover:text-white transition-colors">马来西亚理工大学 (UTM)</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">联系方式</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="fa-solid fa-phone mt-1 mr-3 text-neutral-300"></i>
+                <span class="text-neutral-300">+86 15176804025</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-envelope mt-1 mr-3 text-neutral-300"></i>
+                <span class="text-neutral-300">mike1946295662@gmail.com</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-brands fa-weixin mt-1 mr-3 text-neutral-300 text-lg"></i>
+                <span class="text-neutral-300">mlymly6758</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fa-solid fa-clock mt-1 mr-3 text-neutral-300"></i>
+                <span class="text-neutral-300">7*24小时全天候服务</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-neutral-500 pt-8 text-center text-neutral-400 text-sm">
+          <p>© 2025 马来西亚留学服务. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // 导航栏滚动效果
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add('py-2', 'shadow-md');
+          navbar.classList.remove('py-4', 'shadow-sm');
+        } else {
+          navbar.classList.add('py-4', 'shadow-sm');
+          navbar.classList.remove('py-2', 'shadow-md');
+        }
+      });
+
+      // 移动端菜单切换
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        if (mobileMenu.classList.contains('hidden')) {
+          menuToggle.innerHTML = '<i class="fa-solid fa-bars text-xl"></i>';
+        } else {
+          menuToggle.innerHTML = '<i class="fa-solid fa-times text-xl"></i>';
+        }
+      });
+
+      // FAQ 切换
+      const faqToggles = document.querySelectorAll('.faq-toggle');
+      faqToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const content = toggle.nextElementSibling;
+          const icon = toggle.querySelector('i');
+          
+          // 切换当前FAQ项的显示状态
+          content.classList.toggle('hidden');
+          icon.classList.toggle('rotate-180');
+          
+          // 关闭其他所有打开的FAQ项
+          faqToggles.forEach(otherToggle => {
+            if (otherToggle !== toggle) {
+              const otherContent = otherToggle.nextElementSibling;
+              const otherIcon = otherToggle.querySelector('i');
+              
+              otherContent.classList.add('hidden');
+              otherIcon.classList.remove('rotate-180');
+            }
+          });
+        });
+      });
+
+      // 平滑滚动
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          
+          // 关闭移动菜单（如果打开）
+          if (!mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+            menuToggle.innerHTML = '<i class="fa-solid fa-bars text-xl"></i>';
+          }
+          
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    </script>
+  
+    </body></html>
